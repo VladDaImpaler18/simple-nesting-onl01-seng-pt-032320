@@ -57,7 +57,9 @@ def dennis_ritchies_language
         }
      }
      key = programmer_hash[:dennis_ritchie][:languages]
-     key
+     output = ""
+     key.each { |language| output<<language}
+     output
 end
 
 def adding_matz
